@@ -1,69 +1,78 @@
-# Welcome to your Lovable project
+# 🌐 Ganapathi Reddy | Portfolio (mrgana.tech)  
 
-## Project info
+🚀 **AWS Certified Developer & Red Hat Certified System Administrator**  
+💻 **Cloud | DevOps | Automation | Full-Stack Development**  
 
-**URL**: https://lovable.dev/projects/e53119d2-7cf5-4e76-bb8d-0476f69ed00a
+## 🔥 About Me  
+I'm **Ganapathi Reddy**, a passionate developer with expertise in **AWS Cloud, DevOps, and Automation**. I specialize in **containerization, CI/CD pipelines, and cloud infrastructure**, ensuring high-performance and scalable solutions.  
 
-## How can I edit this code?
+📌 **Domain:** [mrgana.tech](https://mrgana.tech)  
+📌 **GitHub:** [@ganapathireddy12](https://github.com/ganapathireddy12)  
+📌 **LinkedIn:** [Padala Ganapathi Reddy](https://www.linkedin.com/in/padala-ganapathi-reddy/)  
 
-There are several ways of editing your application.
+---
 
-**Use Lovable**
+## 🛠️ Skills  
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/e53119d2-7cf5-4e76-bb8d-0476f69ed00a) and start prompting.
+### **🚀 Cloud & DevOps**  
+✅ **AWS Cloud** | **AWS Certified Developer – Associate**  
+✅ **Docker | Kubernetes | Terraform | Ansible**  
+✅ **Jenkins | CI/CD Pipelines**  
 
-Changes made via Lovable will be committed automatically to this repo.
+### **💻 Programming & Development**  
+✅ **Java | Python | C**  
+✅ **HTML | CSS | JavaScript | React**  
 
-**Use your preferred IDE**
+### **📡 Networking & Security**  
+✅ **Linux | Red Hat System Administrator (RHCSA)**  
+✅ **CCNA | Cybersecurity**  
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+---
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## 🔥 Featured Projects  
 
-Follow these steps:
+### 🌦️ Weather Forecast Webpage  
+📌 **Description:** A real-time weather forecasting app that integrates APIs to fetch and display weather data dynamically.  
+🔗 [GitHub Repo](https://github.com/ganapathireddy12/weather-forecast)  
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+### 🖥️ Serverless Habit Tracker  
+📌 **Description:** A habit-tracking application using AWS Lambda, API Gateway, and S3 for a **completely serverless** experience.  
+🔗 [GitHub Repo](https://github.com/ganapathireddy12/cloud-project)  
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+### ⚙️ Cloud DevOps Projects  
+📌 **Description:** Various projects implementing **Infrastructure as Code (IaC)**, CI/CD, and automation.  
+🔗 [GitHub Repo](https://github.com/ganapathireddy12/cloud-project)  
 
-# Step 3: Install the necessary dependencies.
-npm i
+---
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+## 🎓 Certifications  
 
-**Edit a file directly in GitHub**
+🎖 **Red Hat Certifications**  
+- **Red Hat Certified System Administrator (RHCSA)**  
+- **Red Hat OpenShift Administration I (DO180) - Certificate of Attendance**  
+- **2024 Red Hat Academy - Program Learner**  
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+🎖 **AWS Certifications**  
+- **AWS Certified Developer – Associate**  
+- **AWS Academy Graduate - Cloud Foundations & Cloud Developing**  
 
-**Use GitHub Codespaces**
+🎖 **Other Certifications**  
+- **Java Certification (IT Specialist)**  
+- **Docker Essentials - IBM**  
+- **CCNA: Introduction to Networks | Cybersecurity | Data Science**  
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+---
 
-## What technologies are used for this project?
+## 📞 Get in Touch  
 
-This project is built with .
+📩 **Email:** reddyganapathi317@gmail.com  
+📱 **Phone:** +91 7893773514  
+🌍 **Portfolio:** [mrgana.tech](https://mrgana.tech)  
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+---
 
-## How can I deploy this project?
+🔗 **Let's Connect:**  
+[![GitHub](https://img.shields.io/badge/GitHub-000?style=for-the-badge&logo=github)](https://github.com/ganapathireddy12)  
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/padala-ganapathi-reddy/)  
 
-Simply open [Lovable](https://lovable.dev/projects/e53119d2-7cf5-4e76-bb8d-0476f69ed00a) and click on Share -> Publish.
-
-## I want to use a custom domain - is that possible?
-
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
+🚀 **Available for work globally!**  
