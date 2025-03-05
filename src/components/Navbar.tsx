@@ -52,7 +52,7 @@ const Navbar = () => {
         {/* Logo */}
         <Link to="/" className="flex items-center space-x-2 z-50">
           <Logo className="w-8 h-8" />
-          <span className="font-display font-semibold text-xl text-gray-800 dark:text-white">mrgana.tech</span>
+          <span className="font-display font-semibold text-xl text-gray-800 dark:text-white">Gana</span>
         </Link>
         
         {/* Desktop navigation */}

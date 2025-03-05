@@ -19,6 +19,9 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
         (!storedTheme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
       setTheme('dark');
       document.documentElement.classList.add('dark');
+    } else {
+      setTheme('light');
+      document.documentElement.classList.remove('dark');
     }
     
     // Add a slight delay for the animation to work properly
@@ -92,11 +95,11 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
         )} />
       </div>
       
-      {/* Theme toggle button */}
+      {/* Theme toggle button - Fixed the z-index and pointer-events to ensure it's clickable */}
       <button
         onClick={toggleTheme}
         className={cn(
-          "fixed top-6 right-6 z-50 p-3 rounded-full transition-colors duration-200 hover:scale-105",
+          "fixed top-6 right-6 z-[100] p-3 rounded-full transition-colors duration-200 hover:scale-105 pointer-events-auto",
           theme === 'light' 
             ? "bg-white/80 text-slate-800 hover:bg-white shadow-sm" 
             : "bg-slate-800/80 text-white hover:bg-slate-700 shadow-md"
@@ -129,7 +132,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
           "container text-center text-sm",
           theme === 'light' ? "text-slate-500" : "text-slate-400"
         )}>
-          <p>© {new Date().getFullYear()} Ganapathi Reddy · mrgana.tech</p>
+          <p>© {new Date().getFullYear()} Ganapathi Reddy · Gana</p>
         </div>
       </footer>
     </div>
