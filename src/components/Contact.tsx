@@ -88,7 +88,11 @@ const Contact = () => {
                   </svg>
                   <div>
                     <p className="font-medium">Education</p>
-                    <p className="text-gray-600">BTech at Aditya College of Engineering and Technology, India</p>
+                    <div className="text-gray-600">
+                      <p className="font-medium text-gray-800">Bachelor of Technology (B.Tech) in Computer Science and Engineering</p>
+                      <p>🎓 Aditya College of Engineering and Technology, India</p>
+                      <p className="text-sm text-primary">Expected Graduation: 2026</p>
+                    </div>
                   </div>
                 </div>
                 
