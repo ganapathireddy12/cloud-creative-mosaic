@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 @tailwind base;
@@ -81,6 +82,10 @@
   section {
     @apply py-20;
   }
+  
+  .dark .glass-card {
+    @apply bg-slate-800/50 backdrop-blur-md border border-slate-700/30 shadow-md;
+  }
 }
 
 /* Custom scrollbar */
@@ -101,6 +106,18 @@
   background: rgba(0, 0, 0, 0.3);
 }
 
+.dark ::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
 /* Custom classes */
 @layer components {
   .glass-card {
@@ -113,6 +130,10 @@
   
   .text-gradient {
     @apply bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-cyan-500;
+  }
+  
+  .dark .text-gradient {
+    @apply from-blue-400 to-cyan-300;
   }
 
   .section-title {
