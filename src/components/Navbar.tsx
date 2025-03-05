@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Logo from '@/assets/icons/Logo';
 import { cn } from '@/lib/utils';
+import { Menu, X } from 'lucide-react';
 
 const navLinks = [
   { name: 'Skills', href: '#skills' },
@@ -43,13 +44,15 @@ const Navbar = () => {
   return (
     <header className={cn(
       "sticky top-0 z-50 transition-all duration-300",
-      isScrolled ? "bg-white/80 backdrop-blur-md shadow-sm" : "bg-transparent"
+      isScrolled 
+        ? "bg-white/80 dark:bg-slate-900/80 backdrop-blur-md shadow-sm" 
+        : "bg-transparent"
     )}>
       <div className="container flex items-center justify-between h-20">
         {/* Logo */}
-        <Link to="/" className="flex items-center space-x-2">
+        <Link to="/" className="flex items-center space-x-2 z-50">
           <Logo className="w-8 h-8" />
-          <span className="font-display font-semibold text-xl">mrgana.tech</span>
+          <span className="font-display font-semibold text-xl text-gray-800 dark:text-white">mrgana.tech</span>
         </Link>
         
         {/* Desktop navigation */}
@@ -58,7 +61,7 @@ const Navbar = () => {
             <button
               key={link.name}
               onClick={() => scrollToSection(link.href)}
-              className="text-sm font-medium text-gray-700 hover:text-primary transition-colors link-underline py-1"
+              className="text-base font-medium text-gray-700 dark:text-gray-200 hover:text-primary dark:hover:text-primary transition-colors link-underline py-1"
             >
               {link.name}
             </button>
@@ -67,38 +70,32 @@ const Navbar = () => {
         
         {/* Mobile menu button */}
         <button
-          className="md:hidden p-2 text-gray-700 hover:text-primary transition-colors"
+          className="md:hidden p-2 text-gray-700 dark:text-gray-200 hover:text-primary dark:hover:text-primary transition-colors z-50"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           aria-expanded={mobileMenuOpen}
           aria-label="Toggle menu"
         >
-          <svg 
-            xmlns="http://www.w3.org/2000/svg" 
-            fill="none" 
-            viewBox="0 0 24 24" 
-            stroke="currentColor" 
-            className="w-6 h-6"
-          >
-            {mobileMenuOpen ? (
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-            ) : (
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-            )}
-          </svg>
+          {mobileMenuOpen ? (
+            <X className="w-6 h-6" />
+          ) : (
+            <Menu className="w-6 h-6" />
+          )}
         </button>
       </div>
       
       {/* Mobile navigation */}
       <div className={cn(
-        "md:hidden overflow-hidden transition-all duration-300 ease-in-out",
-        mobileMenuOpen ? "max-h-60 border-b border-gray-200" : "max-h-0"
+        "md:hidden overflow-hidden transition-all duration-300 ease-in-out absolute top-0 left-0 w-full",
+        mobileMenuOpen 
+          ? "h-screen bg-white/95 dark:bg-slate-900/95 backdrop-blur-sm" 
+          : "h-0 pointer-events-none"
       )}>
-        <nav className="container py-4 flex flex-col space-y-4">
+        <nav className="container py-24 flex flex-col space-y-6 items-center text-center">
           {navLinks.map((link) => (
             <button
               key={link.name}
               onClick={() => scrollToSection(link.href)}
-              className="text-gray-700 hover:text-primary transition-colors py-2"
+              className="text-xl font-medium text-gray-800 dark:text-gray-100 hover:text-primary dark:hover:text-primary transition-colors py-2"
             >
               {link.name}
             </button>

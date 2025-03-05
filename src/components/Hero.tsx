@@ -6,31 +6,25 @@ const Hero = () => {
   return (
     <section id="hero" className="min-h-[calc(100vh-5rem)] flex flex-col justify-center relative py-10">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 md:px-8 animate-fade-in">
-        <div className="mb-6 inline-block">
-          <span className="badge bg-blue-100 text-blue-700 animate-fade-in animate-delay-100">
-            Available for work globally • Passionate about Japan
-          </span>
-        </div>
-        
         <h1 className="font-display font-bold text-4xl md:text-5xl lg:text-6xl mb-6 tracking-tight text-balance animate-fade-in animate-delay-200">
           <span>Hi, I'm </span>
           <span className="text-gradient">Ganapathi Reddy</span>
         </h1>
         
-        <p className="text-lg md:text-xl text-gray-700 max-w-2xl mb-8 animate-fade-in animate-delay-300">
+        <p className="text-lg md:text-xl text-gray-700 dark:text-gray-300 max-w-2xl mb-8 animate-fade-in animate-delay-300">
           AWS Certified Developer and Red Hat Certified System Administrator with expertise in cloud computing, DevOps, and automation.
         </p>
         
         <div className="flex flex-wrap gap-4 animate-fade-in animate-delay-500">
           <a 
             href="#contact" 
-            className="button-hover inline-flex items-center justify-center rounded-lg bg-primary px-5 py-2.5 text-white font-medium"
+            className="button-hover inline-flex items-center justify-center rounded-lg bg-primary px-5 py-3 text-white font-medium text-base"
           >
             Get in touch
           </a>
           <a 
             href="#projects" 
-            className="button-hover inline-flex items-center justify-center rounded-lg bg-white border border-gray-200 px-5 py-2.5 text-gray-700 font-medium"
+            className="button-hover inline-flex items-center justify-center rounded-lg bg-white dark:bg-slate-800 border border-gray-200 dark:border-slate-700 px-5 py-3 text-gray-700 dark:text-gray-200 font-medium text-base"
           >
             View projects
           </a>
@@ -41,7 +35,7 @@ const Hero = () => {
             href="https://github.com/ganapathireddy12" 
             target="_blank" 
             rel="noreferrer"
-            className="text-gray-700 hover:text-primary transition-colors"
+            className="text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors"
             aria-label="GitHub"
           >
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-github">
@@ -53,7 +47,7 @@ const Hero = () => {
             href="https://www.linkedin.com/in/padala-ganapathi-reddy/" 
             target="_blank" 
             rel="noreferrer"
-            className="text-gray-700 hover:text-primary transition-colors"
+            className="text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors"
             aria-label="LinkedIn"
           >
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-linkedin">

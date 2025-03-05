@@ -96,10 +96,10 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
       <button
         onClick={toggleTheme}
         className={cn(
-          "fixed top-6 right-6 z-50 p-2 rounded-full transition-colors duration-200",
+          "fixed top-6 right-6 z-50 p-3 rounded-full transition-colors duration-200 hover:scale-105",
           theme === 'light' 
-            ? "bg-white/80 text-slate-800 hover:bg-white" 
-            : "bg-slate-800/80 text-white hover:bg-slate-700"
+            ? "bg-white/80 text-slate-800 hover:bg-white shadow-sm" 
+            : "bg-slate-800/80 text-white hover:bg-slate-700 shadow-md"
         )}
         aria-label={theme === 'light' ? "Switch to dark mode" : "Switch to light mode"}
       >

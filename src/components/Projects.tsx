@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { ExternalLink, Github } from 'lucide-react';
 
 type Project = {
   title: string;
@@ -38,16 +39,16 @@ const projects: Project[] = [
 
 const Projects = () => {
   return (
-    <section id="projects" className="py-24 bg-gradient-to-b from-white to-blue-50">
+    <section id="projects" className="py-24 bg-gradient-to-b from-white to-blue-50 dark:from-slate-900 dark:to-slate-800">
       <div className="max-w-5xl mx-auto px-4 sm:px-6">
         <div className="text-center mb-16">
           <h2 className="section-title inline-block relative">
-            <span className="badge bg-blue-100 text-blue-700 absolute -top-6 left-1/2 transform -translate-x-1/2 whitespace-nowrap">
+            <span className="badge bg-blue-100 text-blue-700 dark:bg-blue-900/50 dark:text-blue-300 absolute -top-6 left-1/2 transform -translate-x-1/2 whitespace-nowrap">
               Recent work
             </span>
             Projects
           </h2>
-          <p className="text-gray-600 max-w-2xl mx-auto mt-4">
+          <p className="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto mt-4 text-lg">
             Explore my portfolio of projects showcasing my skills and expertise
           </p>
         </div>
@@ -60,15 +61,18 @@ const Projects = () => {
               style={{ animationDelay: `${index * 150}ms` }}
             >
               <div className="p-6 flex-1 flex flex-col">
-                <h3 className="text-xl font-semibold mb-3">{project.title}</h3>
-                <p className="text-gray-600 mb-4">{project.description}</p>
+                <h3 className="text-xl font-semibold mb-3 text-gray-800 dark:text-gray-100">{project.title}</h3>
+                <p className="text-gray-600 dark:text-gray-300 mb-4">{project.description}</p>
                 
                 {/* Tech used section */}
                 <div className="mb-4">
-                  <h4 className="text-sm font-medium text-gray-700 mb-2">Technologies Used:</h4>
+                  <h4 className="text-sm font-medium text-gray-700 dark:text-gray-200 mb-2">Technologies Used:</h4>
                   <div className="flex flex-wrap gap-2">
                     {project.technologies.map((tech, techIndex) => (
-                      <span key={techIndex} className="badge bg-blue-50 text-blue-700 py-1">
+                      <span 
+                        key={techIndex} 
+                        className="badge bg-blue-50 text-blue-700 dark:bg-blue-900/30 dark:text-blue-300 py-1"
+                      >
                         {tech}
                       </span>
                     ))}
@@ -77,8 +81,8 @@ const Projects = () => {
                 
                 {/* What I learned section */}
                 <div className="mb-4">
-                  <h4 className="text-sm font-medium text-gray-700 mb-2">What I Learned:</h4>
-                  <ul className="text-sm text-gray-600 list-disc pl-5 space-y-1">
+                  <h4 className="text-sm font-medium text-gray-700 dark:text-gray-200 mb-2">What I Learned:</h4>
+                  <ul className="text-sm text-gray-600 dark:text-gray-300 list-disc pl-5 space-y-1">
                     {project.learnings.map((learning, idx) => (
                       <li key={idx}>{learning}</li>
                     ))}
@@ -91,12 +95,9 @@ const Projects = () => {
                     href={project.githubUrl} 
                     target="_blank" 
                     rel="noreferrer"
-                    className="inline-flex items-center text-primary hover:text-blue-700 transition-colors"
+                    className="inline-flex items-center text-primary hover:text-blue-700 dark:hover:text-blue-300 transition-colors button-hover"
                   >
-                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="mr-1">
-                      <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path>
-                      <path d="M9 18c-4.51 2-5-2-7-2"></path>
-                    </svg>
+                    <Github size={18} className="mr-1" />
                     GitHub
                   </a>
                   
@@ -105,13 +106,9 @@ const Projects = () => {
                       href={project.demoUrl} 
                       target="_blank" 
                       rel="noreferrer"
-                      className="inline-flex items-center text-green-600 hover:text-green-700 transition-colors"
+                      className="inline-flex items-center text-green-600 hover:text-green-700 dark:text-green-400 dark:hover:text-green-300 transition-colors button-hover"
                     >
-                      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="mr-1">
-                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                        <polyline points="15 3 21 3 21 9"></polyline>
-                        <line x1="10" y1="14" x2="21" y2="3"></line>
-                      </svg>
+                      <ExternalLink size={18} className="mr-1" />
                       Live Demo
                     </a>
                   )}
